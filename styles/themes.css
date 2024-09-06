@@ -4,3 +4,64 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+
+
+
+
+/*
+@media (prefers-color-scheme: dark) {
+  .page {
+    --main-font-weight: var(--main-font-weight-dark);
+    --main-font-weight: var(--main-font-weight-dark);
+    --accent-font-weight:var(--accent-font-weight-dark);
+    --text-color: var(--text-color-dark);
+    --background-color: var(--background-color-dark);
+    --background-image: var(--background-image-dark);
+    --color-text-watermark: var(--color-text-watermark-dark);
+    --color-stroke: var(--color-stroke-dark);
+    --contour-heart: var( --contour-heart-dark);
+    --button-text-color:var(--button-text-color-dark);  
+  }
+}
+@media (prefers-color-scheme: light) {
+  .page {
+    --main-font-weight: var(--main-font-weight-light);
+    --main-font-weight: var(--main-font-weight-light);
+    --accent-font-weight:var(--accent-font-weight-light);
+    --text-color: var(--text-color-light);
+    --background-color: var(--background-color-light);
+    --background-image: var(--background-image-light);
+    --color-text-watermark: var(--color-text-watermark-light);
+    --color-stroke: var(--color-stroke-light);
+    --contour-heart: var( --contour-heart-light);
+    --button-text-color:var(--button-text-color-light);  
+  }
+}*/
+
+.theme-light{
+  color-scheme: light;
+  --main-font-weight: var(--main-font-weight-light);
+  --main-font-weight: var(--main-font-weight-light);
+  --accent-font-weight:var(--accent-font-weight-light);
+  --text-color: var(--text-color-light);
+  --background-color: var(--background-color-light);
+  --background-image: var(--background-image-light);
+  --color-text-watermark: var(--color-text-watermark-light);
+  --color-stroke: var(--color-stroke-light);
+  --contour-heart: var( --contour-heart-light);
+  --button-text-color:var(--button-text-color-light);
+}
+.theme-dark{
+  color-scheme: dark;
+  --main-font-weight: var(--main-font-weight-dark);
+  --main-font-weight: var(--main-font-weight-dark);
+  --accent-font-weight:var(--accent-font-weight-dark);
+  --text-color: var(--text-color-dark);
+  --background-color: var(--background-color-dark);
+  --background-image: var(--background-image-dark);
+  --color-text-watermark: var(--color-text-watermark-dark);
+  --color-stroke: var(--color-stroke-dark);
+  --contour-heart: var( --contour-heart-dark);
+  --button-text-color:var(--button-text-color-dark);
+}
