@@ -2,30 +2,23 @@
 :root {
   --main-font-family: 'Inter-Variable';
   --accent-font-family: 'PressStart2P';
-
+  --accent-heart: #FF0000;
   --main-font-weight-light: 400;
   --accent-font-weight-light: 700;
-  --text-color-light: #000;
-  --background-color-light: #FFF;
+  --accent-color-light:#000;
+  --main-color-light:#FFF;
   --background-image-light: repeating-linear-gradient(180deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
   repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
   linear-gradient(to bottom, #e7e7e7 0, #1a1a1a 100%);;
-  --color-text-watermark-light: #000;
-  --color-stroke-light: #FFF;
-  --contour-heart-light: #000000;
-  --button-text-color-light: #FFF;
   --button-text-color-light: #FFF;
 
   --main-font-weight-dark: 465;
   --accent-font-weight-dark: 785;
-  --text-color-dark: #00CC14;
-  --background-color-dark: #000;
+  --accent-color-dark:#00CC14;
+  --main-color-dark:#000;
   --background-image-dark: repeating-linear-gradient(180deg, #000 0, #000 2px, transparent 2px, transparent 4px),
   repeating-linear-gradient(90deg, #000 0, #000 2px, transparent 2px, transparent 4px),
   linear-gradient(to bottom, #007f0c 0, #004306 100%);
-  --color-text-watermark-dark: #00CC14;
-  --color-stroke-dark: #000;
-  --contour-heart-dark: #00CC14;
   --button-text-color-dark:#00CC14;
 }
 
