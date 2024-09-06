@@ -4,14 +4,8 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
-
-
-
-
-
-/*
 @media (prefers-color-scheme: dark) {
-  .page {
+  :root .page {
     --main-font-weight: var(--main-font-weight-dark);
     --main-font-weight: var(--main-font-weight-dark);
     --accent-font-weight:var(--accent-font-weight-dark);
@@ -25,7 +19,7 @@
   }
 }
 @media (prefers-color-scheme: light) {
-  .page {
+  :root .page {
     --main-font-weight: var(--main-font-weight-light);
     --main-font-weight: var(--main-font-weight-light);
     --accent-font-weight:var(--accent-font-weight-light);
@@ -37,9 +31,9 @@
     --contour-heart: var( --contour-heart-light);
     --button-text-color:var(--button-text-color-light);  
   }
-}*/
+}
 
-.theme-light{
+.theme-light .page{
   color-scheme: light;
   --main-font-weight: var(--main-font-weight-light);
   --main-font-weight: var(--main-font-weight-light);
@@ -52,7 +46,7 @@
   --contour-heart: var( --contour-heart-light);
   --button-text-color:var(--button-text-color-light);
 }
-.theme-dark{
+.theme-dark .page{
   color-scheme: dark;
   --main-font-weight: var(--main-font-weight-dark);
   --main-font-weight: var(--main-font-weight-dark);
