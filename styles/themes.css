@@ -7,40 +7,41 @@
 @media (prefers-color-scheme: dark) {
   :root .page {
     --main-font-weight: var(--main-font-weight-dark);
-    --accent-font-weight:var(--accent-font-weight-dark);
+    --accent-font-weight: var(--accent-font-weight-dark);
     --accent-color: var(--accent-color-dark);
     --main-color: var(--main-color-dark);
     --background-image: var(--background-image-dark);
-    --button-text-color:var(--button-text-color-dark);  
+    --button-text-color: var(--button-text-color-dark);
   }
 }
+
 @media (prefers-color-scheme: light) {
   :root .page {
     --main-font-weight: var(--main-font-weight-light);
-    --accent-font-weight:var(--accent-font-weight-light);
+    --accent-font-weight: var(--accent-font-weight-light);
     --accent-color: var(--accent-color-light);
     --main-color: var(--main-color-light);
     --background-image: var(--background-image-light);
-    --button-text-color:var(--button-text-color-light); 
-
+    --button-text-color: var(--button-text-color-light);
   }
 }
 
-.theme-light .page{
+.theme-light .page {
   color-scheme: light;
   --main-font-weight: var(--main-font-weight-light);
-  --accent-font-weight:var(--accent-font-weight-light);
+  --accent-font-weight: var(--accent-font-weight-light);
   --accent-color: var(--accent-color-light);
   --main-color: var(--main-color-light);
   --background-image: var(--background-image-light);
-  --button-text-color:var(--button-text-color-light);
+  --button-text-color: var(--button-text-color-light);
 }
-.theme-dark .page{
+
+.theme-dark .page {
   color-scheme: dark;
   --main-font-weight: var(--main-font-weight-dark);
-  --accent-font-weight:var(--accent-font-weight-dark);
+  --accent-font-weight: var(--accent-font-weight-dark);
   --accent-color: var(--accent-color-dark);
   --main-color: var(--main-color-dark);
   --background-image: var(--background-image-dark);
-  --button-text-color:var(--button-text-color-dark);
+  --button-text-color: var(--button-text-color-dark);
 }
