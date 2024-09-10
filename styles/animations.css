@@ -15,13 +15,13 @@
 
 @keyframes pointer {
   0% {
-    left: -10px;
-  }
-  50% {
     left: -14px;
   }
+  50% {
+    left: -18px;
+  }
   100% {
-    left: -10px;
+    left: -14px;
   }
 }
 

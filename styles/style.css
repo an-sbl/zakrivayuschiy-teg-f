@@ -33,7 +33,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  /*min-height: clamp(327px, calc(100vw - 375px), 368px);*/
   margin: 100px 0;
   border: 2px solid var(--accent-color);
   padding: clamp(120px, calc(100vw - 376px), 136px) 0 25px;
@@ -43,6 +42,7 @@
   text-transform: uppercase;
   background-color: var(--main-color);
 }
+
 .header__logo{
   padding-bottom: 20px;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
@@ -59,19 +59,19 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 5px;
-  padding-top: 23px;
-  padding-left: 18px;
+  gap: 8px;
+  padding-top: 21px;
+  padding-left: 20px;
 }
 
 .theme-menu__button {
   position: relative;
   border: none;
   font-size: 14px;
+  padding: 0;
   line-height: 14px;
   text-transform: uppercase;
   background-color: transparent;
-  transition: opacity 0.3s;
   cursor: pointer;
   transition:opacity 0.3s ease;
 }
@@ -108,7 +108,7 @@
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  left: -10px;
+  left: -14px;
   animation: pointer ease-in-out 1s infinite;
 }
 
@@ -122,7 +122,7 @@
 }
 
 .card__title {
-  padding: 5px 10px;
+  padding: 3px 10px;
   font-size: 18px;
   line-height: 21.78px;
   text-align: left;
@@ -168,9 +168,12 @@
 .card__text {
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 27px;
   padding: 25px 25px 24px;
   border-top: 2px solid var(--accent-color);
+  font-size: 18px;
+  line-height: 21px;
+
 }
 
 .card__control {
@@ -261,7 +264,7 @@
   transition: fill 0.3s linear 0.05s;
 }
 
-.like-icon .heart:hover .core{
+.like-icon .heart:hover .core {
   fill: var(--accent-color);
   transition: fill 0.3s linear;
 }
@@ -271,7 +274,7 @@
   transition: fill 0.3s 0.05s linear;
 }
 
-.like-icon .heart:active .core{
+.like-icon .heart:active .core {
   fill: var(--accent-heart);
   transition: fill 0.3s linear;
 }
@@ -323,7 +326,6 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border: none;
   padding: 15px 19px;
   border: 2px solid var(--accent-color);
   background-color: var(--main-color);
@@ -332,6 +334,13 @@
 .floppy-icon {
   fill: var(--button-text-color);
   mix-blend-mode: difference;
+  inline-size: 39px;
+  block-size:39px;
+}
+
+.card__save-button .floppy-icon {
+  width: 21px;
+  height: 21px;
 }
 
 .dialog::backdrop {
@@ -412,10 +421,14 @@
     margin: 0 0;
   }
 
-  .card__text {
-    gap:25px;
-    padding: 23px 25px 24px;
+  .card__title {
+    padding: 4px 10px;
   }
+
+  .card__text {
+    padding: 24px 25px;
+  }
+
   .card__control {
     margin-right: 25px;
     margin-bottom: 25px;
@@ -424,6 +437,7 @@
   .card__save-button {
     flex-direction: column;
   }
+
   .card__save-button .floppy-icon {
     width: 28px;
     height: 28px;
