@@ -73,6 +73,7 @@
   background-color: transparent;
   transition: opacity 0.3s;
   cursor: pointer;
+  transition:opacity 0.3s ease;
 }
 
 .theme-menu__button:disabled {
@@ -81,7 +82,7 @@
 }
 
 .theme-menu__button:hover {
-  animation: menu-opacity 0.3s ease forwards;
+  opacity: 0.6;
 }
 
 .theme-menu__button::after {
@@ -125,6 +126,7 @@
   font-size: 18px;
   line-height: 21.78px;
   text-align: left;
+  border-bottom: 2px solid var(--accent-color);
   font-variation-settings: "wght" var(--accent-font-weight);
 }
 
@@ -159,6 +161,7 @@
 }
 
 .card__image {
+  display: block;
   width: 100%;
 }
 
@@ -167,6 +170,7 @@
   flex-direction: column;
   gap: 23px;
   padding: 25px 25px 24px;
+  border-top: 2px solid var(--accent-color);
 }
 
 .card__control {
@@ -186,6 +190,7 @@
   padding: 0;
   background-color: transparent;
   transition: box-shadow 0.3s;
+  cursor: pointer;
 }
 
 .card__icon-button:focus {
@@ -266,14 +271,24 @@
   transition: fill 0.3s 0.05s linear;
 }
 
-.like-icon.is-liked .heart .main-body {
+.like-icon .heart:active .core{
   fill: var(--accent-heart);
   transition: fill 0.3s linear;
 }
 
+.like-icon .heart:active .main-body {
+  fill: var(--accent-heart);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .heart .main-body {
+  fill: var(--accent-heart);
+  transition: fill 0.3s 0.05s linear;
+}
+
 .like-icon.is-liked .heart .core {
   fill: var(--accent-heart);
-  transition: fill 0.3s linear 0.05s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .heart .contour {
@@ -299,17 +314,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 clamp(35px, 43%, 180px) 103px;
-  border: 2px solid var(--accent-color);
-  background-color: var(--main-color);
+  margin-bottom: 103px;
+
 }
 
 .card__save-button {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 8px;
   border: none;
   padding: 15px 19px;
+  border: 2px solid var(--accent-color);
   background-color: var(--main-color);
 }
 
@@ -319,7 +335,7 @@
 }
 
 .dialog::backdrop {
-  background-color: rgb(0 0 0);
+  background-color: rgb(0 0 0 / 0.75);
 }
 
 .dialog[open] {
@@ -349,6 +365,7 @@
   line-height: 12.6px;
   text-transform: uppercase;
   background-color: var(--main-color);
+  cursor: pointer;
 }
 
 .dialog__text {
